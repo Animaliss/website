@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Служебная информация для браузера -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дмитрий С — по заданию</title>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap&subset=cyrillic" rel="stylesheet">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- Здесь находится код для пользователя -->
+    <!-- Этот контейнер будет держать всё содержание сайта посередине -->
+    <div class="contaner">
+        <header class="header">
+            <!-- Шапка сайта с логотипом, поиском и т.д. -->
+            <div class="logo animate__animated animate__flash">Обитель сумрака</div>
+            <form action="" class="search">
+                <input type="search" class="search-input" placeholder="Оставьте отпечаток злого мира за порогом">
+                <!-- <button type="submit" class="seatch-button">
+                    <img src="img\search-icon.svg" alt="search-icon">
+                </button> -->
+            </form> 
+            <div class="user">
+                <!-- <img src="img\bookmark.svg" alt="bookmark"> -->
+                <img src="img\avatar.png" alt="avatar" class="avatar">
+            </div>
+        </header>
+
+        <main class="main">
+            <h1 class="title animate__animated animate__fadeInRight">Дмитрий С</h1>
+            <small class="title-en animate__animated animate__fadeInRight">Neqator</small>
+            <div class="info">
+                <div class="master-info">
+                    <span class="tag">Личная страница</span>
+                    <span class="country">Птеребург, 2022 год</span>
+                    <a data-fancybox href="https://www.youtube.com/watch?v=jJ4u_rdnaA8" class="play">Смотреть</a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="full-info">
+                    <nav class="tabs">
+                        <a href="#TheMain" class="tabs-item tabs-item-acteve">Главная</a>
+                        <a href="#Unity3D" class="tabs-item">Про Unity3D</a>
+                        <a href="#screen" class="tabs-item">Скриншоты</a>
+                        <a href="#music" class="tabs-item">Музыка</a>
+                        <a href="#facts" class="tabs-item">Факты</a>
+                        <a href="#itemF" class="tabs-item">Пункт 5</a>
+                        <a href="#itemS" class="tabs-item">Пункт 6</a>
+                        <a href="#" class="-item">
+                            <img src="./img/bookmark-added.svg" alt="" class="bookmark-added">
+                        </a>
+                    </nav>
+
+                    <div class="full-content">
+                        <div class="tabs-content visible" id="TheMain"> <!-- Здесь "главное" -->
+                            <div class="tabs-combo"> <!-- Этот div нужен для того, чтобы subscride был во 2-й колонке-->
+                                <div class="child-tabs">
+                                    <h4 class="text-title">От автора</h4>
+                                    <p class="text">Вы находитесь на странице будущего разработчика компьютерных (мобильных) игр. Скорее всего, "инди"... Возможно будущего автора нескольких книг. На данный момент лишь "соавтора".</p>
+                                    <p class="text">Пока что я обладаю только проектами, таящимися в папке Project's. Впрочем, могу продемонстрировать пару в качестве демок, например:</p>
+                                    <details>
+                                        <summary>Скачать файл</summary>
+                                        <p class="text">А если серьёзно — воспользуйтесь почтовым адресом правее/ниже —></p>
+                                    </details>
+
+                                    <h4 class="text-title">Разработка</h4>
+                                    <p class="text">Это один из моих главных интересов. Выбор стоял между Uniti3D и Unreal Engine 4 и, не могу объяснить, почему (это произошло минуя осознание), но я выбрал Unity... соответственно, язык C# как основной используемый в моей среде разработки игр (и не только игр, на самом деле).</p>
+                                    <p class="text">Хотя мой взор не закрыт и от друг сред. Например, на Godot Engine есть возможность написания скриптов на C#, пусть там пока что и есть некоторые сложности.</p>
+                                    <p class="text">Также я немного умею копаться в Photoshop, моделить в 3D-max или Blender и не только... но мне ещё предстоит учиться и учиться. Как и в написании скриптов на C# в Unity, как и в работе в самой Unity, так и в создании игр как идей, собственно...</p>
+
+                                    <h4 class="text-title">[Информация засекречена]</h4>
+                                    <p class="text">[Информация засекречена]</p>
+                                    <p class="text">[Информация засекречена]</p>
+                                    <p class="text">[Информация засекречена]</p>
+                                </div>
+                                
+                                <div class="subscride">
+                                    <h3 class="subcride-form">Связаться с автором</h3>
+                                    <form action="#" class="subcride-form">
+                                        <input type="text" class="subcride-input" placeholder="Ваш Email">
+                                        <button class="subcride-button">
+                                            <img src="./img/button-check.png" alt="button-check">
+                                        </button>
+                                    </form>
+                                    <details>
+                                        <summary>Spoiler</summary>
+                                        <p class="text">Шутка... Сайт-то локальный.<br> Напишите на Email: Zernon001@mail.ru</p>
+                                    </details>
+                                </div>
+                            </div>
+                        </div> <!-- Обёрнуто в "главное" -->
+
+                        <div class="tabs-content" id="Unity3D">
+                            <h4 class="text-title">Среда разработки Unity</h4>
+                            <p class="text">Unity — межплатформенная среда разработки компьютерных игр. Unity позволяет создавать приложения, работающие под более чем 20 различными операционными системами, включающими персональные компьютеры, игровые консоли, мобильные устройства, интернет-приложения и другие. Выпуск Unity состоялся в 2005 году и с того времени идёт постоянное развитие.</p>
+                            <p class="text">Основными преимуществами Unity являются наличие визуальной среды разработки, межплатформенной поддержки и модульной системы компонентов. К недостаткам относят появление сложностей при работе с многокомпонентными схемами и затруднения при подключении внешних библиотек.</p>
+                            <p class="text">На Unity написаны тысячи игр, приложений и симуляций, которые охватывают множество платформ и жанров. При этом Unity используется как крупными разработчиками, так и независимыми студиями.</p>
+
+                            <h4 class="text-title">Достоинства и недостатки</h4>
+                            <p class="text">Как правило, игровой движок предоставляет множество функциональных возможностей, позволяющих их задействовать в различных играх, в которые входят моделирование физических сред, карты нормалей, динамические тени и многое другое. В отличие от многих игровых движков, у Unity имеется два основных преимущества: наличие визуальной среды разработки и межплатформенная поддержка. Первый фактор включает не только инструментарий визуального моделирования, но и интегрированную среду, цепочку сборки, что направлено на повышение производительности разработчиков, в частности, этапов создания прототипов и тестирования. Под межплатформенной поддержкой предоставляется не только места развертывания (установка на персональном компьютере, на мобильном устройстве, консоли и т. д.), но и наличие инструментария разработки (интегрированная среда может использоваться под Windows и Mac OS).</p>
+                            <p class="text">Третьим преимуществом называется модульная система компонентов Unity, с помощью которой происходит конструирование игровых объектов, когда последние представляют собой комбинируемые пакеты функциональных элементов. В отличие от механизмов наследования, объекты в Unity создаются посредством объединения функциональных блоков, а не помещения в узлы дерева наследования. Такой подход облегчает создание прототипов, что актуально при разработке игр.</p>
+                            <p class="text">В качестве недостатков приводятся ограничение визуального редактора при работе с многокомпонентными схемами, когда в сложных сценах визуальная работа затрудняется. Вторым недостатком называется отсутствие поддержки Unity ссылок на внешние библиотеки, работу с которыми программистам приходится настраивать самостоятельно, и это также затрудняет командную работу. Ещё один недостаток связан с использованием шаблонов экземпляров (англ. prefabs). С одной стороны, эта концепция Unity предлагает гибкий подход визуального редактирования объектов, но с другой стороны, редактирование таких шаблонов является сложным. Также, WebGL-версия движка, в силу специфики своей архитектуры (трансляция кода из C# в С++ и далее в JavaScript), имеет ряд нерешённых проблем с производительностью, потреблением памяти и работоспособностью на мобильных устройствах.</p>
+
+                            <h4 class="text-title">Игры на Unity</h4>
+                            <p class="text">На Unity написаны сотни игр, приложений и симуляций, Unity используется как крупными разработчиками (например, Blizzard), так и в создании инди-игр. Компьютерные игры на Unity охватывают множество платформ и жанров...</p>
+
+                            <h4 class="text-title">Лицензия</h4>
+                            <p class="text">Бесплатная версия Unity имеет некоторые ограничения, но для неё есть возможность распространять игры при условии, что ежегодный доход с игры не превышает 100 000 долларов. Другими словами, начинающим разработчикам ничего не мешает пользоваться Unity бесплатно.</p>
+                        </div> <!-- Обернуто в Unity3D -->
+    
+                        <div class="tabs-content" id="screen">
+                            <!-- Slideshow container -->
+                            <div class="slideshow-container">
+
+                                <!-- Full-width images with number and caption text -->
+                                <div class="mySlides fade">
+                                    <div class="numbertext">1 / 8</div>
+                                    <img src="files/Screen08.png" style="width:100%">
+                                    <div class="textScreen">Локация, сделанная в MagicaVoxel</div>
+                                </div>
+                            
+                                <div class="mySlides fade">
+                                    <div class="numbertext">2 / 8</div>
+                                    <img src="files/Screen07.png" style="width:100%">
+                                    <div class="textScreen">Когда не успел настроить границы</div>
+                                </div>
+                            
+                                <div class="mySlides fade">
+                                    <div class="numbertext">3 / 8</div>
+                                    <img src="files/Screen06.png" style="width:100%">
+                                    <div class="textScreen">Затруднительная ситуация, да?</div>
+                                </div>
+
+                                <div class="mySlides fade">
+                                    <div class="numbertext">4 / 8</div>
+                                    <img src="files/Screen05.png" style="width:100%">
+                                    <div class="textScreen">Спираль из лазеров</div>
+                                </div>
+
+                                <div class="mySlides fade">
+                                    <div class="numbertext">5 / 8</div>
+                                    <img src="files/Screen04.png" style="width:100%">
+                                    <div class="textScreen">Рождение щита</div>
+                                </div>
+
+                                <div class="mySlides fade">
+                                    <div class="numbertext">6 / 8</div>
+                                    <img src="files/Screen03.png" style="width:100%">
+                                    <div class="textScreen">В обычном режиме игры</div>
+                                </div>
+
+                                <div class="mySlides fade">
+                                    <div class="numbertext">7 / 8</div>
+                                    <img src="files/Screen02.png" style="width:100%">
+                                    <div class="textScreen">Сравнение снарядов</div>
+                                </div>
+
+                                <div class="mySlides fade">
+                                    <div class="numbertext">8 / 8</div>
+                                    <img src="files/Screen01.png" style="width:100%">
+                                    <div class="textScreen">TowerDefence от Skillbox</div>
+                                </div>
+                            
+                                <!-- Next and previous buttons -->
+                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                            </div>
+                            <br>
+                            
+                            <!-- The dots/circles -->
+                            <div style="text-align:center">
+                                <span class="dot" onclick="currentSlide(1)"></span>
+                                <span class="dot" onclick="currentSlide(2)"></span>
+                                <span class="dot" onclick="currentSlide(3)"></span>
+                                <span class="dot" onclick="currentSlide(4)"></span>
+                                <span class="dot" onclick="currentSlide(5)"></span>
+                                <span class="dot" onclick="currentSlide(6)"></span>
+                                <span class="dot" onclick="currentSlide(7)"></span>
+                                <span class="dot" onclick="currentSlide(8)"></span>
+                            </div>
+                        </div> <!-- Обернуто в Скриншоты -->
+    
+                        <div class="tabs-content" id="music">
+                            <h3 class="text-title">Музыка из старого и не очень</h3>
+                            <p class="text">Mirrorthrone</p>
+                            <p class="text">Nox Arcana</p>
+                            <p class="text">Pink Floyd</p>
+                            <p class="text">Flёur</p>
+                            <p class="text">Therion</p>
+                            <p class="text">Башня Rowan</p>
+                            <p class="text">Vatican Shadow</p>
+                            <p class="text">Apparent Symmetry</p>
+                            <p class="text">Deform — Мертвая Романтика (2006)</p>
+                        </div> <!-- Обернуто в Музыка -->
+    
+                        <div class="tabs-content" id="facts">
+                            <h3 class="text-title">Некоторые факты о Создателе</h3>
+                            <p class="text">— Прилетел с Камчатки</p>
+                            <p class="text">— Любит музыку</p>
+                            <p class="text">— Читать книги</p>
+                            <p class="text">— И не только</p>
+                        </div> <!-- Обернуто в Факты -->
+    
+                        <div class="tabs-content" id="itemF">
+                            <p class="text">Здесь пока ничего нет.<br>
+                            Ну, помимо этих строк.<br>
+                            Ибо что писать-то?</p>
+                        </div> <!-- Обернуто в Пункт 5 -->
+                
+                        <div class="tabs-content" id="itemS">
+                            <p class="text">Здесь пока ничего нет.<br>
+                            Ну, помимо этих строк.<br>
+                            Ибо что писать-то?</p>
+                        </div> <!-- Обернуто в Пункт 6 -->
+                    </div>
+                </div>
+                <!-- /.full-info -->
+            </div>
+            <!-- /.content -->
+        </main>
+    </div>
+    <!-- /.contaner -->
+
+    <!-- Подключаем библиотеку JQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- Подключаем Fancubox -->
+    <script src="js/jquery.fancybox.min.js"></script>
+    <!-- Подключаем свои скрипты -->
+    <script src="js/main.js"></script>
+</body>
+</html>

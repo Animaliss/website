@@ -1,0 +1,445 @@
+*, *:before, *:after {
+  /* Для всех элементов и псевдоэлементов: */
+  box-sizing: border-box;
+  /* Для того чтобы width и height не включали в себя отступы (margin) */
+}
+
+
+body {
+    background: #0A090A;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    background-image: url(../img/main-bg.png);
+    background-repeat: no-repeat;
+    /* Чтобы картинка не повторялась  */
+    background-position: top center;
+}
+
+.contaner {
+    border: 0px solid red;
+    /* Граница контейнера */
+    max-width: 1140px;
+    /* Максимальая ширина */
+    margin: auto;
+    /* Автоматическое выравнивание (по центру) */
+}
+
+.header {
+    display: flex;
+    /* По умолчанию выравниваются по горизонтали по центру */
+    align-items: center;
+    /* Выравнивание по центру по вертикали */
+    justify-content: space-between;
+    /* Разброс по сторонам */
+    padding-top: 45px;
+    /* Внутренний отступ сверху */
+    margin-bottom: 30%;
+}
+
+.logo {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    flex: 0.8;
+}
+
+.search-input {
+    flex: 1;
+    background: rgba(196, 196, 196, 0.5);
+    border-radius: 5px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 18px;
+    padding-right: 18px;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  /* Скопировано с: https://htmlcolorcodes.com/tutorials/css-placeholder-color/ */
+  ::-webkit-input-placeholder { /* Chrome */
+    color: #AEAEAE;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: #AEAEAE;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: #AEAEAE;
+    opacity: 1;
+  }
+  :-moz-placeholder { /* Firefox 4 - 18 */
+    color: #AEAEAE;
+    opacity: 1;
+  }
+  /* Скопировано с: https://htmlcolorcodes.com/tutorials/css-placeholder-color/ */
+
+  /* Не актуально */
+  .seatch-button {
+      background-color: transparent;
+      border: none;
+      padding: 10px 18px;
+  }
+
+  .user {
+      display: flex;
+      align-items: center;
+  }
+
+  .avatar {
+    border-radius: 50%;
+    /* Скругление картинки */
+    max-width: 40px;
+    max-height: 40px;
+    margin-left: 20px;
+    object-fit: cover;
+}
+
+.title {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  line-height: 64px;
+  margin-bottom: 7px;
+}
+
+.title-en {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 23px;
+  color: #787878;
+  margin-bottom: 38px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.master-info {
+  display: flex;
+  align-items: center;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 19px;
+  color: #333333;
+  background: #FFFFFF;
+  border-radius: 3px;
+  padding: 5px 10px;
+  margin-right: 20px;
+}
+
+.country {
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  margin-right: 30px;
+}
+
+.play {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.play:before {
+  content: '';
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/play.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-right: 15px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  background: #FFFFFF;
+  border-radius: 3px;
+  color: #000000;
+  padding: 3% 4%;
+}
+
+/* Не актуально */
+.button {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 44px;
+  background: #FF8F27;
+
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  border: none;
+  margin-bottom: 31px;
+}
+
+  .full-info {
+    flex: 0.97
+  }
+
+  .full-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .tabs-content {
+    display: none;
+    margin-right: 70px;
+  }
+
+  .child-tabs {
+    margin-right: 70px;
+  }
+
+  .tabs-combo {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .visible {
+    display: block;
+  }
+
+  .tabs {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4%;
+  }
+
+  .tabs-item {
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  /* Отступ справа каждому элементу tabs tabs-item, кроме последнего */
+  .tabs-item:not(:last-child) {
+    margin-right: 4%;
+  }
+
+  .tabs-item-active {
+    color: #FF8F27;
+  }
+
+  .text {
+     font-size: 16px;
+     line-height: 140%;
+     margin-top: 0;
+  }
+
+  .subcride-form {
+    display: flex;
+  }
+
+  .subcride.input {
+    background: rgba(196, 196, 196, 0.5);
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+
+    border-radius: 5px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 18px;
+    padding-right: 18px;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .subcride-button {
+    background: #FF8F27;
+    border-radius: 0px 5px 5px 0px;
+    border: none;
+    padding: 3px;
+  }
+
+  /* Не актуально */
+  /* .email {
+    padding-left: 15px;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #9B9B9B;
+  } */
+
+  @media (max-width: 1200px) {
+    .contaner {
+      max-width: 960px;
+    }
+    .tabs-item {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .contaner {
+      max-width: 740px;
+    }
+    .tabs {
+      flex-wrap: wrap;
+    }
+    .tabs-item {
+      flex-basis: 20%;
+      line-height: 2;
+    }
+    .full-content {
+      flex-wrap: wrap;
+    }
+    .tabs-content {
+      margin-bottom: 5%;
+    }
+    .text {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .contaner {
+      max-width: 540px;
+    }
+    /* .tabs-item {
+      flex-basis: 45%;
+    } */
+    .tabs-content {
+      margin-right: 0;
+    }
+  }
+
+  @media (max-width: 578px) {
+    .contaner {
+      width: 95%;
+    }
+    .header {
+      flex-wrap: wrap;
+    }
+    .search {
+      flex-basis: 100%;
+      order: 3; /* Веление, чтобы оно было 3-м */
+      margin-top: 5%;
+    }
+    .content {
+      flex-wrap: wrap;
+    }
+    .tabs-content {
+      margin-right: 0;
+    }
+  }
+
+
+
+/* Дальше идёт оформление скриншотов */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Скрытия изображения по умолчанию */
+.mySlides {
+    display: none;
+}
+
+/* Кнопки "далее" & "назад" */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Кнопка "next button" будет справа */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* При наведении чёрный фон и небольшое просвечивание */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Оформление подписи */
+.textScreen {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Нумерация (то есть 1/8) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Доты */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Затухающая анимация */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
